@@ -25,7 +25,7 @@ untouched, and use these issues as data cleaning exercises.
 
 ## Prerequisites
 
-You need a MySQL database server (5.0+) and run the commands below through a 
+You need a MariaDB Enterprise Server database (10.5.5+) with an Xpand storage engine cluster and run the commands below through a 
 user that has the following privileges:
 
     SELECT, INSERT, UPDATE, DELETE, 
@@ -41,12 +41,7 @@ user that has the following privileges:
 
 Then run
 
-    mysql < employees.sql
-
-
-If you want to install with two large partitioned tables, run
-
-    mysql < employees_partitioned.sql
+    mariadb < employees.sql
 
 
 ## Testing the installation
